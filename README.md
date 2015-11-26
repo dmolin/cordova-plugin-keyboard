@@ -1,8 +1,14 @@
 # Keyboard
 
+## Foreword to this project.
+
+This project is a fork from the original work of https://github.com/cjpearson/cordova-plugin-keyboard.
+The major changes are on the Android platform. Keyboard detection wasn't working correctly and has been changed to correctly register event handlers and trigger Js callbacks accordingly.
+
+
 > The `Keyboard` object provides some functions to customize the keyboard.
 
-This plugin has only been tested in Cordova 3.2 or greater, and its use in previous Cordova versions is not recommended (potential conflict with keyboard customization code present in the core in previous Cordova versions). 
+This plugin has only been tested in Cordova 3.2 or greater, and its use in previous Cordova versions is not recommended (potential conflict with keyboard customization code present in the core in previous Cordova versions).
 
 If you do use this plugin in an older Cordova version (again, not recommended), you have to make sure the HideKeyboardFormAccessoryBar and KeyboardShrinksView preference values are *always* false, and only use the API functions to turn things on/off.
 
@@ -86,7 +92,7 @@ Set to true to disable scrolling when the WebView is shrunk.
 
     Keyboard.disableScrollingInShrinkView(true);
     Keyboard.disableScrollingInShrinkView(false);
- 
+
 ## Keyboard.hide
 
 Hide the keyboard
