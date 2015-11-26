@@ -149,6 +149,7 @@ Read this property to determine if the keyboard is visible.
 #### Supported Platforms
 
 - iOS
+- Android
 
 ## Keyboard.automaticScrollToTopOnHiding
 
@@ -186,6 +187,7 @@ Attach handler to this event to be able to receive notification when keyboard is
 #### Supported Platforms
 
 - iOS
+- Android
 
 ## keyboardDidHide
 
@@ -203,6 +205,7 @@ Attach handler to this event to be able to receive notification when keyboard is
 #### Supported Platforms
 
 - iOS
+- Android
 
 ## keyboardWillShow
 
