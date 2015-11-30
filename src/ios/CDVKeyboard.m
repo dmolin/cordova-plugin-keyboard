@@ -188,6 +188,10 @@ static IMP WKOriginalImp;
 
     // A view's frame is in its superview's coordinate system so we need to convert again
     self.webView.frame = [self.webView.superview convertRect:screen fromView:self.webView];
+
+    // Setting the content of the scrollView to the same size and offset as the frame.
+    [self.wkWebView.scrollView setContentOffset:CGPointMake(0.0, 0.0) animated: false];
+    [self.wkWebView.scrollView setContentSize:CGSizeMake(self.webView.frame.size.width, self.webView.frame.size.height)];
 }
 
 #pragma mark UIScrollViewDelegate
